@@ -1,0 +1,347 @@
+body {
+	background-color: #EEEEEE;
+	min-width:1000px;
+	font-size:20px;
+	line-height:28px;
+	padding-top:93px;
+
+}
+
+em {
+	font-style:italic;
+}
+
+/**
+Header
+**/
+#headerBar {
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	background-color: #333333;
+	color: #EEEEEE;
+	padding: 15px 50px 10px 50px;
+	font-size:30px;
+}
+
+#headerBar {
+	min-width:900px;
+}
+
+#headerBar p, #headerBar p a {
+	display:inline-table;
+}
+
+#headerBar p a {
+	color: inherit;
+	text-decoration: inherit;
+	margin-top:8px;
+}
+
+#headerBar p a:hover, #headerBar p a:focus {
+	color: #FFFFFF;
+}
+
+#headerBar #navigation {
+	float:right;
+	display:inline-table;
+}
+
+#headerBar #navigation ul li {
+	padding:5px;
+	border-radius:5px;
+	display:inline-table;
+	margin-right:20px;
+}
+
+#headerBar #navigation ul li a img {
+	width:40px;
+}
+
+#headerBar #navigation ul li:hover, #headerBar #navigation ul li:focus {
+	background-color:#b62027;
+}
+
+/**
+Footer
+**/
+footer{
+	bottom:0;
+	left:0;
+	padding:0px;
+	margin:0;
+	text-align:center;
+	color:#444;
+	width:100%;
+	color:#000;
+}
+
+/**
+Login Page
+**/
+#pageLoginWrapper {
+	margin: 0 20px 40px 20px;
+	padding: 50px;
+	font-size:20px;
+	line-height:28px;
+	max-width:1200px;
+}
+
+.pageLoginBlock {
+	display:inline-table;
+	width:45%;
+	min-width:500px;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+#pageLoginForm a {
+	text-decoration:none;
+}
+
+
+/**
+Register/Forgot Password Page
+**/
+#registerForm, #forgotPasswordForm {
+	width:600px;
+	margin:auto;
+	margin-bottom:10px;
+}
+
+#registerForm label, #forgotPasswordForm label {
+	float:left;
+	width:150px;
+}
+
+#registerForm .registerInput, #forgotPasswordForm .forgotInput {
+	display:inline-table;
+	max-width:450px;
+}
+
+
+/**
+Side navigation for users
+**/
+#userSideNavigationView {
+	position:fixed;
+	width:220px;
+	/*box-shadow:0px 4px 4px #000;*/
+	border-right:1px solid #aaa;
+	overflow-y:scroll;
+	background-color:#eee;
+	height:100%;
+	padding-bottom:93px;
+}
+
+@media all and (min-height: 2em) {
+    #userSideNavigationView{
+        overflow: scroll;
+    }
+}
+
+
+#userSideNavigationView ul .sideNavClass{
+	font-weight:bold;
+	margin-left:15px;
+	margin-bottom:20px;
+}
+
+#userSideNavigationView ul .sideNavClass ul .sidNavAssignment{
+	font-weight:normal;
+	margin-left:25px;
+	margin-bottom:10px;
+}
+
+#userSideNavigationView p {
+	text-align:center;
+	border-bottom:1px solid #aaa;
+	font-weight:bold;
+	color:#e00;
+	padding:20px 0;
+}
+
+/**
+Main users view
+**/
+#usersMainContentArea {
+	margin-left:270px;
+	margin-top:50px;
+	margin-right:100px;
+	margin-bottom:100px;
+	font-size:20px;
+}
+
+#userMainClassList {
+	width:95%;
+	margin-top:20px;
+	margin-bottom:30px;
+}
+
+
+
+#userMainClassList tr td {
+	padding:10px 20px;
+}
+
+#userMainClassList tr td.late_incomplete {
+	color: #FF0000;
+}
+
+.column_assignmentStatus img:hover {
+	cursor:pointer;
+}
+
+/*
+#userMainClassList tr td.notlate_incomplete {
+	color:#FF8119;
+}
+*/
+
+#userMainClassList tr td.due_today_incomplete {
+	color:#FF8119;
+}
+
+/**
+Main assignment list styling
+**/
+.userMainClass {
+	font-weight:bold;
+	padding-top:10px;
+}
+
+
+/**
+My profile page
+**/
+#myProfileWrapper {
+
+	margin:50px auto;
+	width:700px;
+	font-size:20px;
+}
+
+#myProfileWrapper form {
+	padding:0 20px;
+}
+
+#myProfileWrapper form label{
+	width:220px;
+	margin-bottom:20px;
+}
+
+#myProfileWrapper form input[type=text],
+#myProfileWrapper form input[type=email],
+#myProfileWrapper form input[type=password],
+#myProfileWrapper form select{
+	width:370px;
+	display:inline-table;
+}
+
+
+#myProfileWrapper h2 {
+	margin-top:18px;
+	padding-bottom:5px;
+	border-bottom:1px solid #bbb;
+}
+
+#myProfileWrapper em {
+	font-style:italic;
+	font-size:15px;
+}
+
+#myProfileWrapper h1 {
+	color:#bbb;
+	font-size:30px;
+}
+
+
+
+.pointerOnHover:hover{
+	cursor:pointer;
+}
+
+
+
+/**
+Admin page - View stats
+**/
+#pageViewStatsWrapper {
+	margin:auto;
+	width:600px;
+
+	padding:10px;
+
+	font-size:20px;
+}
+
+#pageViewStatsWrapper .statValue {
+	font-size:15px;
+}
+
+
+/*
+View users admin
+*/
+#viewUsersWrapper, #adminViewUserClassWrapper {
+	width:900px;
+	margin:auto;
+	padding:15px 0;
+}
+
+#viewUsersWrapper table tbody td.colActions{
+	text-align:right;
+	width:150px;
+}
+
+
+#adminViewUsersSpecific, #adminViewUsersEdit {
+	font-size:20px;
+	width:800px;
+	margin:auto;
+}
+
+#adminViewUsersSpecific .userInfRow, #adminViewUsersEdit .userInfRow {
+	margin-bottom:10px;
+}
+
+#adminViewUsersSpecific .userCad, #adminViewUsersEdit .userCad {
+	float:left;
+	width:200px;
+}
+
+#adminViewUsersEdit .usrVal {
+	width:300px;
+}
+
+#adminViewUsersEdit #userClassesBlock,
+#adminViewUsersSpecific #userClassesBlock {
+	margin-left:200px;
+}
+
+/*
+Admin view specific user
+*/
+#adminViewUserClassWrapper {
+	font-size:20px;
+}
+
+/**
+Admin add user assignment
+*/
+#adminAddUserAssignmentWrapper {
+	width:800px;
+	margin:auto;
+	padding:10px;
+	font-size:18px;
+}
+
+#adminAddUserAssignmentWrapper form label {
+	float:left;
+	width:120px;
+}
+
+#adminAddUserAssignmentWrapper form input[type=text]{
+	width:500px;
+}
